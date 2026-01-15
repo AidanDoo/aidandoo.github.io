@@ -1,26 +1,90 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Aidan's Website</title>
+        <title>Aidan Do</title>
+        <meta property="og:title" content="Aidan Do">
+        <meta property="og:description" content="Second year CS student at UCI.">
+        <meta property="og:image" content="images/profilepic.jpg">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" href="favicon.ico">
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
-    <body>
-        <h1 >Aidan Do</h1>
-        <img src="images/fun.jpg" alt="Picture of Aidan Do laying down" id="profile_pic">
-        <div>
-            <p>Welcome to my personal website!</p>
-            <h2>Projects <em>(so far)</em></h2>
+    <header>
+        <nav id="nav_bar">
             <ul>
-                <li> <a href="https://leaveaspace.web.app/" target="_blank"> Leave A Space</a></li>
-                <li> <a href="https://github.com/AidanDoo/HealthInsuranceClaimAgent-public" target="_blank"> AI Health Insurance Claim Agent</a></li>
+                <li style="float: left; width: auto;" id="nav_name">Aidan Do</li>
+                <ul id_="nav_item">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="https://github.com/AidanDoo">GitHub</a></li>
+                    <!--<li a href="resume.pdf">Resume</a></li>-->
+                </ul>
             </ul>
+        </nav>
+    </header>
+    <body>
+        <div id="cover">
+            <h1>Aidan Do</h1>
+            <ul class="cover_links">
+                 <!-- <li><a href="resume.pdf"><img src="img/social_icons/resume.png"><p>Resume</p></a></li> -->
+                <li><a href="https://github.com/AidanDoo"><img src="images/social_icons/github.png"><p>GitHub</p></a></li>
+                <li><a href="https://www.linkedin.com/in/aidando360/"><img src="images/social_icons/linkedin.png"><p>LinkedIn</p></a></li>
+                <li><a href="https://www.instagram.com/aidando_/"><img src="images/social_icons/instagram.png"><p>Instagram</p></a></li>
+            </ul>
+            <a href="#about">
+                <!-- Add a way to scroll down smoothly-->
+                <img class="gudetama_waving" src="https://media.tenor.com/ZoPOC5IxuGsAAAAj/gudetama-welcome.gif">
+            </a>
         </div>
-        <a href="https://github.com/AidanDoo" target="_blank">
-            <img src="images/github.png" alt="GithubIcon" class="social_icon">
-        </a>
-        <a href="https://www.linkedin.com/in/aidando360/" target="_blank">
-            <img src="images/linkedin.png" alt="LinkedInIcon" class="social_icon">
-        </a>
+
+        <div id="about">
+            <div id="about_info">
+                <h3>About Me</h3>
+                <code>Name:</code>
+                <p>Aidan Do</p>
+                <code>Bio:</code>
+                <p>Enjoys going to the gym, playing video games, and learning about software development.</p>
+                <code>Education:</code>
+                <p>University of California, Irvine - B.S. Computer Science, Class of 2028</p>
+                <code>Pronouns:</code>
+                <p>He/Him/His</p>
+            </div>
+            <img src="images/profilepic.jpg" id="profile_pic" alt="Profile picture of Aidan Do">
+        </div>
+
+        <div id="projects">
+            <h3>Projects</h3>
+            <div class="project_gallery">
+                <div class="project_item">
+                    <h4>AI Healthcare Insurance Claim Approval Agent</h4>
+                    <img src="images/projects/healthinsuranceagent.png" alt="AI Healthcare Insurance Claim Approval Agent Output">
+                    <p>An AI agent that evaluates healthcare insurance claims and determines whether to approve or deny them</p>
+                    <p>Achieved over 80% precision and recall</p>
+                    <div class="project_links">
+                        <a href="https://github.com/AidanDoo/HealthInsuranceClaimAgent-public" target="_blank">
+                            <img src="images/social_icons/github.png" alt="GitHub Icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="project_item">
+                    <h4>Leave A Space</h4>
+                    <img src="images/projects/leaveaspace.png" alt="Leave A Space Application Screenshot">
+                    <p>A web application that generates relevant timestamps for Formula 1 Grand Prix race replays</p>
+                    <p>Supports for over 70 races (2023-2025)</p>
+                    <div class="project_links">
+                        <a href="https://leaveaspace.web.app/" target="_blank">leaveaspace.web.app</a>
+                        <a href="https://github.com/AidanDoo/HealthInsuranceClaimAgent-public" target="_blank">
+                            <img src="images/social_icons/github.png" alt="GitHub Icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <footer>
+            <li><a href="https://github.com/AidanDoo"><img src="images/social_icons/github.png"></a></li>
+                <li><a href="https://www.linkedin.com/in/aidando360/"><img src="images/social_icons/linkedin.png"></a></li>
+                <li><a href="https://www.instagram.com/aidando_/"><img src="images/social_icons/instagram.png"></a></li>
+        </footer>
     </body>
 </html>

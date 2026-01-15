@@ -1,0 +1,157 @@
+/* General */
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: cadetblue;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block
+}
+
+a {
+    color:black;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    font-size: 4em;
+}
+
+h4 {
+    margin: 0 0 1em 0;
+}
+
+/* Navigation Bar */
+
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav {
+    text-align: center;
+    background-color: lightsteelblue;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    float: center;
+    width: 24%
+}
+
+nav a {
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+}
+
+nav li:hover {
+    background-color: cadetblue;
+    transition: 0.5s;
+}
+
+nav a:link, nav a:visited {
+    color: white;
+}
+
+#nav_name {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 10px 20px;
+    color:azure;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Cover */
+#cover {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 90px;
+    margin-bottom: 120px;
+    background: linear-gradient(to bottom, lightsteelblue, cadetblue);
+    }
+
+#cover h1 {
+    font-size: 5em;
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 12px 0 0;
+}
+
+.cover_links {
+    margin-top: 20px;
+}
+
+.cover_links li {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cover_links li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+}
+
+.cover_links a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.cover_links:hover p {
+    opacity: 1;
+}
+
+.cover_links p {
+    opacity: 0;
+    transition: 0.3s;
+    margin: 0;
+    color: black;
+}
+
+.cover_links img {
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+    filter: brightness(0);
+}
+
+.gudetama_waving {
+    height: 150px;
+    width: auto;
+    margin-top: 20px;
+}
