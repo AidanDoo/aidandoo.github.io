@@ -68,7 +68,7 @@ nav a {
     font-weight: 700;
 }
 
-nav li:hover {
+nav li:not(#nav_name):hover {
     background-color: cadetblue;
     transition: 0.5s;
 }
@@ -132,7 +132,7 @@ nav a:link, nav a:visited {
     text-decoration: none;
 }
 
-.cover_links:hover p {
+.cover_links li:hover p {
     opacity: 1;
 }
 
@@ -198,4 +198,52 @@ nav a:link, nav a:visited {
 #about_info h3 {
     text-align: left;
     margin: 10px 0 .25em 0;
+}
+
+/* Projects */
+.project_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5em;
+}
+
+.project_item {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: wheat;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.project_item p{
+    margin: 0.75em 0;
+}
+
+.project_screenshot {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5px;
+}
+
+.project_links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.project_links a {
+    display: flex;
+    align-items: center;
+    gap: 0.3 em;
+    font-style: italic;
+    color: black;
+}
+
+.project_link_icon {
+    height: 20px;
+    width: 20px;
 }
