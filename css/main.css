@@ -2,12 +2,14 @@
 
 html {
     height: 100%;
+    margin: 0;
 }
 
 body {
     background-color: cadetblue;
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
 }
 
 ul {
@@ -95,6 +97,7 @@ nav a:link, nav a:visited {
 #cover {
     text-align: center;
     height: 75%;
+    width: 100%;
     position: relative;
     padding-top: 70px;
     padding-bottom: 90px;
@@ -179,9 +182,9 @@ nav a:link, nav a:visited {
 #about {
     width: 75%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: center;
-    margin: 0 auto 20px auto;
+    margin: 20px auto 0 auto;
     padding-top: 50px;
 }
 
@@ -203,7 +206,7 @@ nav a:link, nav a:visited {
     width: auto;
     border: 5px solid wheat;
     border-radius: 200px;
-    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #about_info {
