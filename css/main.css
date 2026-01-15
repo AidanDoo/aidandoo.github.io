@@ -7,6 +7,7 @@ html {
 body {
     background-color: cadetblue;
     height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ul {
@@ -246,4 +247,25 @@ nav a:link, nav a:visited {
 .project_link_icon {
     height: 20px;
     width: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-top: 10px;
+    background-color: lightsteelblue;
+    width: 100%;
+    clear:both;
+    margin-top: 50px;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    transition: transform 0.5s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+footer img:hover {
+    transform: translateY(-6px);
 }
